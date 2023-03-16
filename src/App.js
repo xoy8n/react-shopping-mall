@@ -1,9 +1,13 @@
 import logo from './logo.svg';
+import { useState } from 'react';
 import {Button, Navbar, Container, Nav, Row, Col } from 'react-bootstrap';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+
+  let [shoes] = useState()
+  
   return (
     <div className="App">
       <Navbar bg="light" variant="light">
@@ -21,8 +25,8 @@ function App() {
         <Row>
           <Col sm>
             <img src="https://cms.accuweather.com/wp-content/uploads/2018/06/surf-4.jpg" width="80%"/>
-            <img src={`${process.env.PUBLIC_URL}https://cms.accuweather.com/wp-content/uploads/2018/06/surf-4.jpg`} />
-            <img src={process.env.PUBLIC_URL + 'https://cms.accuweather.com/wp-content/uploads/2018/06/surf-4.jpg' } />
+            <img src={`${process.env.PUBLIC_URL}https://cms.accuweather.com/wp-content/uploads/2018/06/surf-4.jpg`} width="80%"/>
+            <img src={process.env.PUBLIC_URL + 'https://cms.accuweather.com/wp-content/uploads/2018/06/surf-4.jpg' } width="80%"/>
            
             <h4>상품명</h4>
             <p>상품설명</p>
